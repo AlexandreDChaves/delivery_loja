@@ -36,16 +36,26 @@ body{
     color: var(--cor-da-empresa);
     font-size: 40px;
 }
+
+ul li#imagem-localizacao{
+    display: flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: .8rem;
+    align-items: center;
+}
+
 .bi-geo-alt{
     color: var(--cor-da-empresa);
     font-size: 40px;
-}
+    }
 
 .nome-localizacao{
     color: var(--cor-da-empresa);
     font-size: 40px;
     padding-left: 0;
     padding-right: 5rem;
+    
 }
 
 .bi-image{
