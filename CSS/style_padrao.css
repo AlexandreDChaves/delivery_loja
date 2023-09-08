@@ -62,3 +62,39 @@ ul li#imagem-localizacao{
     color: var(--cor-da-empresa);
     font-size: 40px;
 }
+
+.footer{
+    background-color: var(--background-clean);
+    margin-top: 5rem;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card li{
+    list-style: none;
+}
+
+.footer-card a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.footer-item{
+    margin: .5rem;
+}
+
+i.bi-house, i.bi-emoji-smile, i.bi-upc-scan, i.bi-cart4, i.bi-stickies{
+    color: var(--cor-da-empresa);
+    font-size: 40px;
+}
+
+.footer-nome-item{
+    font-size: 20px;
+    font-weight: 700;
+    color: gray;
+}
