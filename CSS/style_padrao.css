@@ -106,6 +106,38 @@ input:focus{
     margin-top: 5rem;
 }
 
+input[type=text]{
+    color: grey;
+}
+
+section#categorias{
+   display: flex;
+}
+
+#categoria-ul{
+    display: flex;
+    justify-content: center;
+}
+
+.categoria-a{
+   margin: 3rem 5rem;
+   text-decoration: none;
+   justify-content: center;
+}
+
+li.Categoria{
+   margin: auto;
+   color: gray;
+   list-style: none;
+   border: solid 1px var(--cor-da-empresa);
+   border-radius: 2rem;
+   width: 90%;
+   padding: 2rem;
+   margin: 1.2rem;
+   font-weight: 300;
+   text-align: center;
+}
+
 .footer-card{
     display: flex;
     justify-content: space-around;
