@@ -176,6 +176,45 @@ h3.nome-produto{
     margin: auto;
     font-size: 20px;
     margin-bottom: 1.3rem;
+    margin-top: .2rem;
+}
+
+div#ver-mais{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+div#ver-mais a{
+    text-decoration: none;
+    color: grey;
+    margin: 0.8rem 2rem;
+}
+
+section#avaliacao{
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+#avaliacao-texto{
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+.bi-hand-thumbs-up, .bi-hand-thumbs-down{
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+#avaliacao-span{
+    font-size: 30px;
+    color: gray;
 }
 
 .footer-card{
@@ -207,4 +246,41 @@ i.bi-house, i.bi-emoji-smile, i.bi-upc-scan, i.bi-cart4, i.bi-stickies{
     font-size: 20px;
     font-weight: 700;
     color: gray;
+}
+
+@media  screen and (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+    header{
+        display: flex;
+    }
+    i.bi-geo-alt, .nome-localizacao, i.bi-image{
+        display: none;
+    }
+    ul.footer-card{
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .footer-card a{
+        width: 100%;
+    }
+    i.bi-search{
+        position: absolute;
+        margin-right: 3rem;
+        padding-left: 2rem;
+    }
+
+    #categoria-ul{
+        flex-wrap: wrap;
+    }
+
+    #card-produtos{
+        flex-wrap: wrap;
+    }
+
+    div.card-produto{
+        width: 100%;
+    }
 }
