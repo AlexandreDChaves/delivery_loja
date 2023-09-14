@@ -125,7 +125,11 @@ section#categorias{
    justify-content: center;
 }
 
-li.Categoria{
+li.categoria{
+    margin:auto;
+}
+
+.categoria{
    margin: auto;
    color: gray;
    list-style: none;
@@ -136,6 +140,42 @@ li.Categoria{
    margin: 1.2rem;
    font-weight: 300;
    text-align: center;
+}
+
+section#card-produtos{
+    display: flex;
+    
+}
+
+.card-produto{
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px black;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-content: center;
+}
+
+.card-produto:hover{
+    box-shadow: inset 50px 0 0 0;
+    color: white;
+}
+
+.card-produto img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+h3.nome-produto{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 1.3rem;
 }
 
 .footer-card{
