@@ -2,117 +2,144 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/CSS/style_padrao.css">
-    <title>Loja do Zé</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/padrao-telas.css">
+  <title>HOME</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="menu">
-            <ul class="ul-menu">
-                <a href="./login.html">
-                    <li><i class="bi bi-person-bounding-box"></i></li>
-                </a>
-                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
-                    <input id="cep" type="text" placeholder="Digite seu CEP">
-                    <p class="nome-localizacao"></p>
-                    <button onclick="consultaEndereco()">OK</button>
-                </li>
-                <li><i class="bi bi-image"></i></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="cabecalho">
+    <nav class="menu">
+      <ul class="ul-menu">
+        <a href="login.html">
+          <li id="image-usuario"><i class="bi bi-file-person"></i></li>
+        </a>
 
-    <main>
-        <section id="mensagens-inicio">
-            <h1 id="nome-empresa"></h1>
-            <h2 class="mensagem">Olá, Seja bem vindo(a)</h2>
-            <h3 class="mensagem">Vamos fazer seu pedido</h3>
-        </section>
+        <li id="image-localizacao">
+          <i class="bi bi-geo-alt"></i>
+          <input id="cep" type="text" placeholder="Digite seu CEP">
+          <p class="nome-localizacao"></p>
+          <button onclick="consultaEndereco()">OK</button>
+        </li>
 
-        <section id="input">
-            <i class="bi bi-search"></i>
-            <input id="input-text" type="text" placeholder="digite seu pedido aqui">
-        </section>
+        <li class="logo-empresa">
+          <i class="bi bi-card-image"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="categorias">
-            <ul id="categoria-ul">
-                <a href="" class="categoria-a"><li class="categoria">Categoria 1</li></a>
-                <a href="" class="categoria-a"><li class="categoria">Categoria 2</li></a>
-                <a href="" class="categoria-a"><li class="categoria">Categoria 3</li></a>
-                <a href="" class="categoria-a"><li class="categoria">Categoria 4</li></a>
-            </ul>
-        </section>
+  <main>
+    <section id="mensagens-inicio">
+      <h1 id="nome-empresa">Loja do Zé</h1>
+      <h2 class="mensagem">Seja bem-vindo!</h2>
+      <h3 class="mensagem">Vamos fazer seu pedido</h3>
+    </section>
 
-        <section id="card-produtos">
-            <div class="card-produto">
-                <img src="https://cf.shopee.com.br/file/d86d6cd13c6bd8560baa6075643bf737" alt="">
-                <h3 class="nome-produto">produto1</h3>
-            </div>
-            <div class="card-produto">
-                <img src="https://cf.shopee.com.br/file/d86d6cd13c6bd8560baa6075643bf737" alt="">
-                <h3 class="nome-produto">produto2</h3>
-            </div>
-            <div class="card-produto">
-                <img src="https://cf.shopee.com.br/file/d86d6cd13c6bd8560baa6075643bf737" alt="">
-                <h3 class="nome-produto">produto3</h3>
-            </div>
-            <div class="card-produto">
-                <img src="https://cf.shopee.com.br/file/d86d6cd13c6bd8560baa6075643bf737" alt="">
-                <h3 class="nome-produto">produto4</h3>
-            </div>
-           
-        </section>
-        <div id="ver-mais">
-            <a href="">Ver mais >></a>
-        </div>
+    <!-- input de pesquisa -->
+    <section id="input">
+      <i class="bi bi-search"></i>
+      <input id="input-text" type="text" placeholder="Procure seu pedido aqui" />
+    </section>
 
-        <section id="avaliacao">
-            <p id="avaliacao-texto">Avalie nosso APP</p>
-            <i class="bi bi-hand-thumbs-up"></i>
-            <i class="bi bi-hand-thumbs-down"></i>
-            <span id="avaliacao-span">Sua avaliação pode gerar desontos</span>
-        </section>
+    <section id="categorias">
+      <ul id="categoria-ul">
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 1</li>
+        </a>
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 2</li>
+        </a>
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 3</li>
+        </a>
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 4</li>
+        </a>
+      </ul>
+    </section>
 
-        <footer id="footer" class="footer">
-            <ul class="footer-card">
-                <a href="/index.html">
-                    <li class="footer-item">
-                        <i class="bi bi-house"></i>
-                        <p class="footer-nome-item">Home</p>
-                    </li>
-                </a>
-                <a href="/cadastro_usuario.html">
-                    <li class="footer-item">
-                        <i class="bi bi-emoji-smile"></i>
-                        <p class="footer-nome-item">Cadastro Usuário</p>
-                    </li>
-                </a>
-                <a href="/cadastro_produto.html">
-                    <li class="footer-item">
-                        <i class="bi bi-upc-scan"></i>
-                        <p class="footer-nome-item">Cadastro Produto</p>
-                    </li>
-                </a>
-                <a href="/carrinho.html">
-                    <li class="footer-item">
-                        <i class="bi bi-cart4"></i>
-                        <p class="footer-nome-item">Carrinho</p>
-                    </li>
-                </a>
-                <a href="/produto.html">
-                    <li class="footer-item">
-                        <i class="bi bi-stickies"></i>
-                        <p class="footer-nome-item">Produto</p>
-                    </li>
-                </a>
-            </ul>
-        </footer>
-    </main>
-    <script src="/JS/index.js"></script>
+    <section id="cards">
+      <div class="card">
+        <img src="https://www.imagensempng.com.br/wp-content/uploads/2022/01/2442.png" alt="Logo exemplo" />
+        <h3 class="nome-produto-card">Produto 1</h3>
+      </div>
+
+      <div class="card">
+        <img src="https://www.fuiserviajante.com/wp-content/uploads/2022/05/pizza-comida-tipica-italiana.jpg" alt="Logo exemplo" />
+        <h3 class="nome-produto-card">Produto 2</h3>
+      </div>
+
+      <div class="card">
+        <img src="https://www.pngplay.com/wp-content/uploads/2/Chocolate-Cake-No-Background.png" alt="Logo exemplo" />
+        <h3 class="nome-produto-card">Produto 3</h3>
+      </div>
+
+      <div class="card">
+        <img src="https://toppng.com/uploads/preview/mexican-torta-png-torta-de-jamon-vector-11562916622m5l4z4dmtk.png"
+          alt="Logo exemplo" />
+        <h3 class="nome-produto-card">Produto 4</h3>
+      </div>
+    </section>
+
+    <div id="ver-mais">
+      <a href="">Ver mais >> </a>
+    </div>
+
+
+    <!-- seção avalie nosso APP -->
+    <section id="avaliacao">
+      <p id="titulo-avaliacao">AVALIE NOSSO APP</p>
+      <i class="bi bi-hand-thumbs-up"></i>
+      <i class="bi bi-hand-thumbs-down"></i>
+      <span id="frase-avaliacao">Sua avaliação pode gerar cupons</span>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <ul class="footer-card">
+      <a href="index.html">
+        <li id="footer-item">
+          <i class="bi bi-house-fill"></i>
+          <p class="footer-name-item">HOME</p>
+        </li>
+      </a>
+
+      <a href="cadastrar_usuario.html">
+        <li id="footer-item">
+          <i class="bi bi-emoji-smile"></i>
+          <p class="footer-name-item">CADASTRO USUÁRIO</p>
+        </li>
+      </a>
+
+      <a href="cadastro_produto.html">
+        <li id="footer-item">
+          <i class="bi bi-upc-scan"></i>
+          <p class="footer-name-item">CADASTRO PRODUTO</p>
+        </li>
+      </a>
+
+      <a href="carrinho.html">
+        <li id="footer-item">
+          <i class="bi bi-cart"></i>
+          <p class="footer-name-item">CARRINHO</p>
+        </li>
+      </a>
+
+      <a href="produto.html">
+        <li id="footer-item">
+          <i class="bi bi-stickies"></i>
+          <p class="footer-name-item">PRODUTO</p>
+        </li>
+      </a>
+    </ul>
+  </footer>
+
+  <script src="./js/script-home.js"></script>
 </body>
 
 </html>
